@@ -44,8 +44,7 @@ let usuarioSchema = new Schema({
     }
 });
 
-//Excluir contraseña del modelo
-//cuando se consulte en postman no aparecera la password
+
 usuarioSchema.methods.toJSON = function() {
 
     let user = this;
